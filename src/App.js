@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button } from 'reactstrap';
+import MainNav from './MainNav';
 
-function App() {
+function MyApp() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MainNav />
+      <div className="em-bg-main text-center text-white">
+        <div className="em-header-main">
+          <h1>COMM-APP</h1>
+          <h3>Our Services are Unbeatable</h3>
+          <Button>Learn more</Button>
+        </div>
+        <div className="dark-overlay" />
+      </div>
+      <div className="container pt-3" />
     </div>
   );
 }
 
-export default App;
+export default MyApp;

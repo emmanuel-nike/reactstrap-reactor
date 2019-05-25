@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.em-header-main {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 5em;
+  z-index: 999;
+}
+
+.em-bg-main {
+  background: url("../images/bg-main.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.em-nav {
+  background-color: #235992;
+}
+
+.em-nav .navbar-nav .nav-link {
+  color: white;
+  font-size: 0.9em;
+}
+
+.em-nav .navbar-nav .em-nav-btn {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 4px 15px;
+  margin-left: 8px;
+  margin-top: 3px;
+  margin-right: 8px;
+}
+
+.em-nav .navbar-nav .em-nav-btn:hover {
+  border: 1px solid #007bff;
+  color: #007bff;
+  background: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
