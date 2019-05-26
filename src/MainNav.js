@@ -36,7 +36,7 @@ export default class MainNav extends React.Component {
     return (
       <div>
         <Navbar dark className="em-nav" expand="md">
-          <NavbarBrand href="/">COmm-App</NavbarBrand>
+          <NavbarBrand href="/">REACT|OR</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>

@@ -8,9 +8,9 @@ function MyApp() {
       <MainNav />
       <div className="em-bg-main text-center text-white">
         <div className="em-header-main">
-          <h1>COMM-APP</h1>
+          <h1>REACT|OR</h1>
           <h3>Our Services are Unbeatable</h3>
-          <Button>Learn more</Button>
+          <Button className="em-main-btn">Learn more</Button>
         </div>
         <div className="dark-overlay" />
       </div>
