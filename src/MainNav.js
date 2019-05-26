@@ -41,26 +41,19 @@ export default class MainNav extends React.Component {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">Home</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">About</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
               <NavItem>
-                <NavLink className="em-nav-btn" href="/signin">
-                  Sign In
-                </NavLink>
+                <NavLink />
+              </NavItem>
+              <NavItem>
+                <NavLink href="/signin">Sign In</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="em-nav-btn" href="/signup">
