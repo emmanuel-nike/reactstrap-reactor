@@ -1,5 +1,5 @@
 import React from 'react';
-import MainContent from './MainContent';
+import MainContent from '../sections/MainContent';
 
 class Home extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <MainContent title="React|or" />
+        <MainContent title="React|OR" />
       </div>
     );
   }
