@@ -1,17 +1,8 @@
 import React from 'react';
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink
 } from 'reactstrap';
+import { NavLink as Link } from 'react-router-dom';
 
 export default class MainNav extends React.Component {
   constructor(props) {
@@ -41,24 +32,28 @@ export default class MainNav extends React.Component {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Home</NavLink>
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">About</NavLink>
+                <NavLink href="#about">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
+                <NavLink href="/contact">Contact</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink />
               </NavItem>
               <NavItem>
-                <NavLink href="/signin">Sign In</NavLink>
+                <Link className="nav-link" to="/signin">
+                  Sign In
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className="em-nav-btn" href="/signup">
+                <Link className="em-nav-btn nav-link" to="/signup">
                   Create Account
-                </NavLink>
+                </Link>
               </NavItem>
             </Nav>
           </Collapse>

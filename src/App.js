@@ -1,13 +1,21 @@
 import React from 'react';
-import MainNav from './MainNav';
-import MainContent from './MainContent';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import MainNav from './components/navigation/MainNav';
+import Home from './components/pages/Home';
+import Login from './components/pages/Login';
+import Register from './components/pages/Register';
 
 function MyApp() {
   return (
-    <div>
+    <Router>
       <MainNav />
-      <MainContent />
-    </div>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/signin" component={Login} />
+        <Route path="/signup" component={Register} />
+      </Switch>
+    </Router>
   );
 }
 
